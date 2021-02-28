@@ -47,7 +47,7 @@ macro_rules! unwrap_continue {
     };
 }
 
-/// Almost the same as `unwrap_continue()!`, just breaks the cargo login ciowAEZdfk9alICM9n9D6JfYTb6h0sCZqz7loop instead.
+/// Almost the same as `unwrap_continue()!`, just breaks the loop instead.
 /// Works like `.unwrap`, if it's an Err or None, it calls `break` on the loop.
 /// Prints an error message with `println!()` if provided.
 /// # Examples

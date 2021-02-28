@@ -2,6 +2,9 @@
 name = "loop_unwrap"
 version = "0.1.0"
 authors = ["Mrp1Dev <mrp1dev@gmail.com>"]
+description = "Utility macros for unwrapping in loops."
 license = "MIT"
 edition = "2018"
-
+repository = "https://github.com/Mrp1Gamer/loop_unwrap"
+readme = false
+keywords = ["unwrap"]
