@@ -1,0 +1,10 @@
+[package]
+name = "loop_unwrap"
+version = "0.1.0"
+authors = ["Mrp1Dev <mrp1dev@gmail.com>"]
+license = "MIT"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
