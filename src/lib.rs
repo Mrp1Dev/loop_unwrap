@@ -40,7 +40,7 @@
 #[macro_export]
 macro_rules! unwrap_continue {
     ($x:expr) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 continue;
@@ -48,7 +48,7 @@ macro_rules! unwrap_continue {
         }
     };
     ($x:expr, $label:lifetime) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 continue $label;
@@ -56,7 +56,7 @@ macro_rules! unwrap_continue {
         }
     };
     ($x:expr, $label:lifetime, $err_msg:expr) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 println!("{}", $err_msg);
@@ -65,7 +65,7 @@ macro_rules! unwrap_continue {
         }
     };
     ($x:expr, $err_msg:expr) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 println!("{}", $err_msg);
@@ -74,7 +74,7 @@ macro_rules! unwrap_continue {
         }
     };
     ($x:expr, $err_msg:expr, $label:lifetime) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 println!("{}", $err_msg);
@@ -126,7 +126,7 @@ macro_rules! unwrap_continue {
 #[macro_export]
 macro_rules! unwrap_break {
     ($x:expr) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 break;
@@ -134,7 +134,7 @@ macro_rules! unwrap_break {
         }
     };
     ($x:expr, $label:lifetime) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 break $label;
@@ -142,7 +142,7 @@ macro_rules! unwrap_break {
         }
     };
     ($x:expr, $label:lifetime, $err_msg:expr) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 println!("{}", $err_msg);
@@ -151,7 +151,7 @@ macro_rules! unwrap_break {
         }
     };
     ($x:expr, $err_msg:expr) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 println!("{}", $err_msg);
@@ -160,7 +160,7 @@ macro_rules! unwrap_break {
         }
     };
     ($x:expr, $err_msg:expr, $label:lifetime) => {
-        match $x.to_option() {
+        match ::loop_unwrap::ToOption::to_option($x) {
             Some(v) => v,
             None => {
                 println!("{}", $err_msg);
